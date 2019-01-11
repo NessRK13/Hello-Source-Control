@@ -10,8 +10,10 @@ namespace HelloSourceControl
     {
         static void Main(string[] args)
         {
+            Console.Write("Please enter your name: ");
+            string name = Console.ReadLine();
             DateTime localDate = DateTime.Now;
-            Console.WriteLine("Hello World on " + localDate);
+            Console.WriteLine("Hello " + name + ", today is " + localDate);
             Console.ReadKey();
         }
     }
